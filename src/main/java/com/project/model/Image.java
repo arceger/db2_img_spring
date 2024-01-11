@@ -1,8 +1,9 @@
 package com.project.model;
 
+import jakarta.persistence.*;
 import org.springframework.data.annotation.CreatedDate;
 
-import javax.persistence.*;
+
 import java.sql.Blob;
 import java.util.Date;
 
