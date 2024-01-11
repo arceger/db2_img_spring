@@ -9,12 +9,12 @@
         <relativePath/>
     </parent>
     <groupId>com.project</groupId>
-    <artifactId>spring-boot-mysql-image-upload</artifactId>
+    <artifactId>Db2ImgSpring</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>img_db2_spring</name>
     <description>img_db2_spring</description>
     <properties>
-        <java.version>17</java.version>
+        <java.version>20</java.version>
     </properties>
     <dependencies>
         <dependency>
@@ -35,9 +35,9 @@
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
         <dependency>
-            <groupId>com.ibm.db2</groupId>
-            <artifactId>jcc</artifactId>
-            <version>11.5.9.0</version>
+            <groupId>com.mysql</groupId>
+            <artifactId>mysql-connector-j</artifactId>
+            <scope>runtime</scope>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -49,9 +49,9 @@
             <artifactId>spring-boot-starter-web-services</artifactId>
         </dependency>
         <dependency>
-            <groupId>jakarta.servlet</groupId>
-            <artifactId>jakarta.servlet-api</artifactId>
-            <version>10.1.17</version>
+            <groupId>jakarta.platform</groupId>
+            <artifactId>jakarta.jakartaee-api</artifactId>
+            <version>8.0.0</version>
         </dependency>
     </dependencies>
 

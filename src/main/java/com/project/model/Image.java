@@ -1,12 +1,16 @@
 package com.project.model;
 
 import jakarta.persistence.*;
+import lombok.Getter;
+import lombok.Setter;
 import org.springframework.data.annotation.CreatedDate;
 
 
 import java.sql.Blob;
 import java.util.Date;
 
+@Getter
+@Setter
 @Entity
 @Table(name = "image_table")
 public class Image {
@@ -15,27 +19,10 @@ public class Image {
     private long id;
 
     @Lob
+    @Column(columnDefinition = "MEDIUMBLOB")
     private Blob image;
 
     private Date date = new Date();
 
-    public long getId() {
-        return id;
-    }
 
-    public void setId(long id) {
-        this.id = id;
-    }
-
-    public Blob getImage() {
-        return image;
-    }
-
-    public void setImage(Blob image) {
-        this.image = image;
-    }
-
-    public Date getDate() {
-        return date;
-    }
 }
