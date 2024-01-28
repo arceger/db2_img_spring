@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SpringBootMysqlImageUploadApplication {
+public class CadastroMembersApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(SpringBootMysqlImageUploadApplication.class, args);
+        SpringApplication.run(CadastroMembersApplication.class, args);
     }
 
 }
